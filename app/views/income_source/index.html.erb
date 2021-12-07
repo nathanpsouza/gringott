@@ -1,0 +1,7 @@
+<h1>Oi mundo</h1>
+
+<ul>
+  <% @income_sources.each do |income_source| %>
+    <li><%= income_source.description %> - <%= number_to_currency income_source.amount %></li>
+  <%- end %>
+</ul>
